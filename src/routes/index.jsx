@@ -166,6 +166,10 @@ import Download from '@/pages/tiengviet/download';
 
 export const routes = [
     {
+        path: '/account',
+        element: <Account />,
+    },     
+    {
         path:'/download',
         element: <Download/>,
     },
@@ -174,10 +178,6 @@ export const routes = [
         element: <RootLayout />,
         children: [
                     { index: true, element: <Home /> },
-                    {
-                        path: 'account',
-                        element: <Account />,
-                    },
                     
                     {
                         path: 'forgot-password',

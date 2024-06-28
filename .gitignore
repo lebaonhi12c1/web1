@@ -25,5 +25,5 @@ dist-ssr
 
 
 .env
-.evn.development
+.env.development
 .env.production
