@@ -161,7 +161,7 @@ import TONGHOPGAMEKM from '@/pages/tieng-khmer/game/tong-hop/tong-hop-game-khmer
 import VANHOAGAMEKM from '@/pages/tieng-khmer/game/van-hoa/van-hoa-game-khmer';
 import Question from '@/pages/tiengviet/question/question';
 import Download from '@/pages/tiengviet/download';
-
+import Categories from '@/pages/tiengviet/categories';
 
 
 export const routes = [
@@ -178,7 +178,7 @@ export const routes = [
         element: <RootLayout />,
         children: [
                     { index: true, element: <Home /> },
-                    
+                    {path: 'categories', element: <Categories />},
                     {
                         path: 'forgot-password',
                         element: <ForgotPassword />,
