@@ -22,9 +22,9 @@ const FoodContent = ({ title, children }) => {
     }, [role, isLoggedIn]);
     return (
         <>
-            <div className=" bg-opacity-40 p-4 bg-white/80 backdrop-blur-md rounded-2xl shadow flex flex-col gap-4 mb-4">
+            <div className=" bg-opacity-40 p-4 bg-white/80 rounded-2xl shadow flex flex-col gap-4 mb-4">
 
-                <div className="flex gap-x-5">
+                <div className="flex gap-x-5 flex-wrap">
                     {role && role !== 'normal' && <img src={data?.data?.imageIcon} className="w-10 h-10" alt="" />}
                     <h3 className="font-semibold text-2xl text-gray-800">{title}: </h3>
                     {/* {role && role !== 'normal' && <img src={data?.data?.imageIcon} className="w-10 h-10" alt="" />} */}
@@ -40,12 +40,12 @@ const FoodContent = ({ title, children }) => {
                         )}
                     <h3 className="font-semibold text-2xl text-gray-800">{title}: </h3>              
                 </div> */}
-                
-                
-                <div className="break-words whitespace-pre-wrap text-justify">{children}</div>
+                <div className="">{children}</div>
             </div>
         </>
     );
 };
 
 export default FoodContent;
+
+// break-words whitespace-pre-wrap text-justify

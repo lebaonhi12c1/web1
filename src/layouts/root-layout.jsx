@@ -18,7 +18,7 @@ const RootLayout = () => {
                 <Header toggleSidebar={toggleSidebar} />
                 <div className="flex flex-1">
                     <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-                    <main className={`flex-1 p-4 transition-margin duration-300 ${isSidebarOpen ? 'ml-64' : ''}`}>
+                    <main className={`flex-1 p-4 mt-[64px] transition-margin duration-300 ${isSidebarOpen ? 'md:ml-64' : ''}`}>
                         <Outlet />
                     </main>
                 </div>

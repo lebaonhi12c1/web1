@@ -13,7 +13,8 @@
     "@headlessui/react": "^1.7.17",
     "@react-oauth/google": "^0.12.1",
     "axios": "^1.6.2",
-    "clsx": "^2.0.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-highlight-words": "^0.20.0",
@@ -25,7 +26,8 @@
     "react-tooltip": "^5.25.0",
     "react-vertical-timeline-component": "^3.6.0",
     "swiper": "^11.0.5",
-    "swr": "^2.2.4"
+    "swr": "^2.2.4",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

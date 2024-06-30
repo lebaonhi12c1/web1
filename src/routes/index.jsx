@@ -162,8 +162,8 @@ import VANHOAGAMEKM from '@/pages/tieng-khmer/game/van-hoa/van-hoa-game-khmer';
 import Question from '@/pages/tiengviet/question/question';
 import Download from '@/pages/tiengviet/download';
 import Categories from '@/pages/tiengviet/categories';
-
-
+import Product from '@/pages/tiengviet/product';
+import Tag from '@/pages/tiengviet/tag';
 export const routes = [
     {
         path: '/account',
@@ -179,6 +179,8 @@ export const routes = [
         children: [
                     { index: true, element: <Home /> },
                     {path: 'categories', element: <Categories />},
+                    {path: 'product/:id', element: <Product />},
+                    {path: 'tag/:id', element: <Tag />},
                     {
                         path: 'forgot-password',
                         element: <ForgotPassword />,
