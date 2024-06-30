@@ -56,24 +56,30 @@ const HeaderRoot = ({ toggleSidebar }) => {
     };
 
     return (
-        <nav className="bg-white px-4 border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-10">
-            <div className="flex flex-wrap items-center justify-between mx-auto py-4 max-w-[992px]">
-                <button onClick={toggleSidebar} className="focus:outline-none hidden md:block">
-                    <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4 6h16M4 12h16m-7 6h7"
-                        ></path>
-                    </svg>
-                </button>
+        <nav className="bg-white px-4 pb-4 border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-10">
+            <div className="flex items-center justify-between mx-auto py-4 max-w-[992px]">
+                <div className='flex items-center gap-4'>
+                    <button onClick={toggleSidebar} className="focus:outline-none hidden md:block">
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div className='w-[60px] h-[60px] flex items-center gap-4'>
+                        <img src="https://atlanticjsc.com.vn/wp-content/uploads/2018/09/WHO-Logo-1.png" alt="logo" className='w-full h-full object-cover'/>
+                        <h5 className='text-nowrap text-xl font-medium'>My Brand</h5>
+                    </div>
+                </div>
                 {/* <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img
                         src="https://atlanticjsc.com.vn/wp-content/uploads/2018/09/WHO-Logo-1.png"
@@ -180,7 +186,8 @@ const HeaderRoot = ({ toggleSidebar }) => {
                         </svg>
                     </button>
                 </div>
-                <div
+            </div>
+            <div
                     className={classNames('items-center justify-between w-full md:flex md:w-auto md:order-1', {
                         hidden: !navbarOpen,
                     })}
@@ -211,7 +218,6 @@ const HeaderRoot = ({ toggleSidebar }) => {
                         </li>
                     </ul>
                 </div>
-            </div>
         </nav>
     );
 };
