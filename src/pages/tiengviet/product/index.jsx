@@ -56,6 +56,7 @@ const Product = memo(() => {
             console.error(error);
         } finally {
             setIsCreateFeedback(false)
+            setComment('')
             setImages([])
             setCloudinaryFiles({})
             setImagevalue('')
