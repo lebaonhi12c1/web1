@@ -56,7 +56,7 @@ const HeaderRoot = ({ toggleSidebar }) => {
     };
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-10">
+        <nav className="bg-white px-4 border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-10">
             <div className="flex flex-wrap items-center justify-between mx-auto py-4 max-w-[992px]">
                 <button onClick={toggleSidebar} className="focus:outline-none hidden md:block">
                     <svg
